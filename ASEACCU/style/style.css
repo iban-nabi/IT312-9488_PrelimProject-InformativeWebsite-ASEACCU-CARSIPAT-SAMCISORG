@@ -1,0 +1,509 @@
+/*
+color palette
+#dd660d maroon
+#4f0205 orange
+#a46e51 brown
+#e9e2c7 wheat
+#6e6456 grey
+*/
+
+@font-face {
+    font-family: GFS_Gidot;
+    src: url(GFSDidot-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto_Bold;
+    src: url(Roboto/Roboto-Bold.ttf);
+}
+
+body {
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: GFS_Gidot;
+}
+
+nav {
+    background-color: #dd660d;
+    height: 75px;
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    z-index: 1;
+    top: 0;
+}
+
+
+nav p {
+    color: #4f0205;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+div button {
+    background-color: #4f0205;
+    font-family: Roboto_Bold;
+    font-size: 18px;
+    margin-left: 35%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 28%;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: white;
+    color: #4f0205;
+}
+
+form {
+   display: inline; 
+}
+
+button:hover {
+    cursor: pointer;
+    /* background-color: transparent;
+    border-color: #4f0205; */
+}
+
+button a:hover {
+    /* color: #4f0205;      */
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    zoom: unset;
+}
+
+.banner-text {
+    background-color: #4f0205;
+    color: white;
+}
+
+.banner-grid p {
+    margin-left: 4%;
+    margin-right: 1%;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.banner-grid span {
+    color: #dd660d;
+}
+
+.title {
+    font-size: 57px;
+    width: 90%;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 2%;
+    font-weight: bolder;
+    color: #4f0205;
+    text-decoration: underline;
+}
+
+.sub-text {
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 2%;
+    font-weight: 1000;
+    color: #4f0205;
+}
+
+.description {
+    font-family: sans-serif;
+    font-size: 27px;
+    margin-left: 2%;
+    text-align: justify;
+}
+
+.quote {
+    font-size: 24px;
+    text-align: center;
+    color: #4f0205;
+    font-style: italic;
+}
+
+.wrapper {
+    margin-top: 10%;
+    align-content: center;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.wrapper>div {
+    margin-top: 15%;
+}
+
+/* event details */
+#event-details>img {
+    width: 99%;
+}
+
+/* speakers*/
+.index-carousel>a {
+    display: inline-flex;
+    position: relative;
+}
+
+.index-carousel {
+    position: relative;
+    margin-top: 26px;
+    text-align: center;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 340px;
+}
+
+.carousel-change:checked+.carousel-redirect {
+    opacity: 100%;
+}
+
+.carousel-redirect {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.6s ease-out;
+}
+
+.buttons {
+    display: block;
+    margin-bottom: 130px;
+}
+
+
+.carousel-buttons {
+    text-align: center;
+    padding-left: 0px;
+}
+
+.carousel-buttons li {
+    display: inline-block;
+    margin: 1%;
+}
+
+.carousel-bullet {
+    color: grey;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.keynote-grid {
+    grid-template-columns: 39% 59%;
+    margin-bottom: 10%;
+    column-gap: 2%;
+    display: grid;
+}
+
+.keynote-grid div p:first-child {
+    color: #4f0205;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: GFS_Gidot;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.keynote-grid div p:nth-child(2) {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.keynote-grid ul li {
+    font-family: sans-serif;
+    font-size: 20.0px;
+    margin-bottom: 8px;
+}
+
+.keynote-grid ul {
+    padding-left: 20px;
+}
+
+
+.speaker-div {
+    grid-template-columns: 33% 33% 33%;
+    height: 400px;
+    display: grid;
+    column-gap: 1%;
+}
+
+.speaker-img,
+.keynote-grid img {
+    width: 60%;
+    border: 5px solid #4f0205;
+    border-radius: 20px;
+}
+
+.keynote-grid img {
+    margin-left: 13%;
+    width: 80%;
+}
+
+.speaker-name {
+    margin-top: 6%;
+    font-size: 21.3px;
+    color: #4f0205;
+    font-weight: bold;
+}
+
+.speaker-div div p:last-child {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*schedule*/
+#schedule {
+    margin-bottom: 50px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+
+.schedule-grid div,
+.schedule-grid p {
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+    margin-top:-2%;
+    margin-bottom: 30px;
+}
+
+.schedule-grid button {
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -5%;
+}
+
+
+.footer {
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #4f0205;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    /* 175% */
+    .banner-grid {
+        display: block;
+    }
+
+    .banner-grid p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 10%;
+    }
+
+    .keynote-grid {
+        display: block;
+    }
+
+    .description {
+        padding-right: 20px;
+    }
+
+    .keynote-grid div p:first-child {
+        margin-top: 4%;
+        margin-left: 15%;
+    }
+
+    .keynote-grid div p:nth-child(2) {
+        margin-left: 15%;
+    }
+
+    .keynote-grid ul {
+        padding-left: 16%;
+        padding-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+
+    /*150%*/
+    .banner-grid p {
+        margin-left: 2%;
+        font-size: 43px;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    /*mobile view 1 */
+
+    nav p {
+        font-size: 30px;
+        margin-left: -10px;
+    }
+
+    .title {
+        font-size: 35px;
+        margin-left: 5%;
+    }
+
+    .sub-text {
+        font-size: 25px;
+        margin-left: 5%;
+    }
+
+    .description {
+        font-size: 19px;
+    }
+
+    .quote {
+        font-size: 18px;
+        width: 80%;
+        margin-left: 9%;
+    }
+
+
+    div button {
+        width: 50%;
+        font-size: 13px;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    .banner-grid p {
+        font-size: 30px;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+
+
+    .keynote-grid img {
+        width: 60%;
+        margin-left: 0px;
+    }
+
+    .keynote-grid div p:first-child {
+        margin-top: 4%;
+        margin-left: 0px;
+        font-size: 25px;
+    }
+
+    .keynote-grid div p:nth-child(2) {
+        margin-left: 0%;
+        font-size: 17px;
+    }
+
+    .keynote-grid ul li {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .keynote-grid ul {
+        margin-left: 3px;
+        padding-right: 40px;
+        text-align: left;
+    }
+
+    .keynote-grid {
+        text-align: center;
+    }
+
+    .speaker-name {
+        font-size: 25px;
+    }
+
+    .description {
+        margin-left: 20px;
+    }
+
+    .buttons {
+        margin-top: 240%;
+    }
+
+    #schedule {
+        display: block;
+        margin-bottom: 0px;
+
+    }
+
+    .schedule-grid div {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .schedule-grid img {
+        margin-bottom: -15%;
+    }
+
+    .schedule-grid p {
+        margin-right: 1%;
+        margin-left: 1%;
+        font-size: 30px;
+    }
+
+    .schedule-grid button {
+        margin-left: 0%;
+    }
+
+    .speaker-div {
+        display: block;
+    }
+
+    .speaker-div div {
+        margin-bottom: 20%;
+    }
+
+    .schedule-grid {
+        display: block;
+    }
+
+    .carousel-inner {
+        position: unset;
+    }
+
+    .footer {
+        position: relative;
+        padding-bottom: 8%;
+    }
+}

@@ -1,0 +1,354 @@
+@font-face {
+    font-family: Inter_Bold;
+    src: url(inter/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Inter_Regular;
+    src: url(inter/Inter-Regular.ttf);
+}
+
+nav {
+    background-color: #FFD542;
+    height: 75px;
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: auto;
+}
+.banner-text {
+    background-color: #1C184F;
+    color: #FFD542;
+}
+
+.banner h1 {
+    top: 50%;
+    margin-left: 4%;
+    margin-right: 1%;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.banner p{
+    top: 50%;
+    margin-left: 4%;
+    margin-right: 1%;
+    font-size: 30px;
+}
+
+.video{
+    display: block;
+    height: auto;
+    width: 100%;
+    
+}
+
+body{
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav p {
+    color: #1C184F;
+    font-family: GFS_Gidot;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    font-family: Inter_Regular;
+}
+
+nav p{
+    color: #1C184F;
+    font-family: Inter_Bold;
+    font-size: 40px;
+}
+
+.wrapper{
+    margin-top: 10%;
+    align-content: center;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+
+.banner-grid p{
+    margin-left: 4%;
+    margin-right: 1%;
+
+}
+
+.title{
+    margin-top: 15%;
+    font-family: Inter_Bold;
+    font-size: 60px;
+}
+
+.description{
+    font-size: 30px;
+}
+
+/*List of Organizations*/
+.list-title{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 35px;
+    color: #1C184F;
+    font-family: Inter_Bold;
+}
+
+.organization-title{
+    font-size: 30px;
+    color:#1C184F;
+    font-family: Inter_Bold;
+}
+
+.organization-desc{
+    font-size: 20px;
+    color:#1C184F;
+    text-align: justify;
+}
+
+.organization-grid-one{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+.img{
+    width: 70%;
+    padding-top: 10%;
+    padding-left: 25%;
+    border-radius: 50%;
+}
+.img2{
+    width: 70%;
+    padding-right: 15%;
+    border-radius: 50%;
+}
+
+.organization-grid-two{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #FFD542;
+    color: #1C184F;
+    font-family: Inter_Regular;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+}
+
+button:hover{
+    background-color: #1C184F;
+    color: #FFD542;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 10%;
+}
+
+.guild-list{
+    font-family: Inter_Regular;
+    color:#1C184F;
+    font-size: 20px;
+}
+
+.guild-list span{
+    color:#cea308;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    color: #1C184F;
+    font-size: 18px;
+    background-color: #FFD542;
+}
+
+@media only screen and (max-width: 1500px){
+    .banner-grid{
+        height: max-content;
+        display: block;
+    }
+    .banner-text .title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .banner-grid p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 4%;
+        font-size: 14px;
+        text-align: center;
+        
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .banner-grid{
+        display: block;
+    }
+    
+    nav p{
+        font-size: 20px;
+        margin-left: 70px;
+        text-align: center;
+    }
+
+    .wrapper{
+        margin-top: 10%;
+        align-content: center;
+        max-width: 800px;
+        margin: auto;
+        text-align: left;
+    }
+
+    .list-title{
+        font-size: 25px;
+    }
+    .banner-text .title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .banner-grid p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 4%;
+        font-size: 14px;
+        text-align: center;
+        
+    }
+
+    .organization-grid-one{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .organization-title{
+        font-size: 25px;
+ 
+        text-align: center;
+    }
+
+    .button{
+        margin-left: 80px;
+        width: 35vh;
+        margin-top: 20px;
+    }
+
+    .organization-desc , .guild-list{
+        font-size: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .organization-grid-two{
+        display: block;
+        
+    }
+    .img2{
+        padding-left: 15%;
+    }
+    
+    .img{
+        padding-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    nav p{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .wrapper{
+        margin-top: 10%;
+        align-content: center;
+        max-width: 800px;
+        margin: auto;
+        text-align: left;
+    }
+
+    .list-title{
+        font-size: 25px;
+    }
+    .banner-text .title{
+        font-size: 30px;
+
+        text-align: center;
+    }
+
+    .banner-grid p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        font-size: 14px;
+        text-align: center;
+        
+    }
+
+    .organization-grid-one{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .organization-title{
+        font-size: 25px;
+ 
+        text-align: center;
+    }
+
+    .button{
+        margin-left: 70px;
+        width: 35vh;
+        margin-top: 20px;
+    }
+
+    .organization-desc , .guild-list{
+        font-size: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .organization-grid-two{
+        display: block;
+        
+    }
+    .img2{
+        padding-left: 15%;
+    }
+    
+    .img{
+        padding-left: 15%;
+    }
+}
